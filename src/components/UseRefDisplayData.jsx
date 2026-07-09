@@ -16,14 +16,11 @@ function Parent() {
       return;
     }
     // console.log(newEntry);
+    
     setData(prev => [...prev, newEntry])
     nameRef.current.value = ""
     emailRef.current.value = ""
   }
-
-  console.log("data: ", data);
-
-
   return (
     <div className='p-5'>
       <form onSubmit={handleSubmit} className='space-y-4'>
@@ -55,5 +52,4 @@ function Parent() {
     </div>
   )
 }
-
 export default Parent
